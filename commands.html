@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bot Commands - Together Forever • T4E</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            padding-top: 80px;
+        }
+        
+        .bot-header {
+            text-align: center;
+            padding: 60px 20px;
+            background: linear-gradient(135deg, rgba(102, 126, 234, 0.2) 0%, rgba(118, 75, 162, 0.2) 100%);
+        }
+        
+        .bot-avatar {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 4px solid var(--accent-color);
+            box-shadow: 0 10px 40px rgba(0, 229, 255, 0.4);
+            margin-bottom: 20px;
+        }
+        
+        .bot-status {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: rgba(0, 250, 154, 0.1);
+            border: 2px solid var(--success-color);
+            padding: 8px 20px;
+            border-radius: 50px;
+            margin-top: 20px;
+        }
+        
+        .status-dot {
+            width: 10px;
+            height: 10px;
+            background: var(--success-color);
+            border-radius: 50%;
+            animation: pulse-dot 2s ease-in-out infinite;
+        }
+        
+        @keyframes pulse-dot {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+        
+        .command-detail {
+            background: var(--card-bg);
+            border-radius: 15px;
+            padding: 25px;
+            margin: 20px 0;
+            border-left: 4px solid var(--primary-color);
+        }
+        
+        .command-detail h4 {
+            color: var(--accent-color);
+            margin-bottom: 10px;
+        }
+        
+        .command-detail code {
+            background: rgba(0, 0, 0, 0.3);
+            padding: 3px 8px;
+            border-radius: 5px;
+            font-family: 'Courier New', monospace;
+            color: var(--accent-color);
+        }
+        
+        .usage-example {
+            background: rgba(30, 30, 60, 0.5);
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 10px;
+        }
+        
+        .copy-btn {
+            background: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+        }
+        
+        .copy-btn:hover {
+            background: var(--secondary-color);
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <span class="logo-text">Together Forever</span>
+                <span class="logo-subtitle">T4E</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html#home">Home | الرئيسية</a></li>
+                <li><a href="index.html#features">Features | المميزات</a></li>
+                <li><a href="commands.html">Commands | الأوامر</a></li>
+                <li><a href="rules.html">Rules | القوانين</a></li>
+                <li><a href="index.html#join">Join | انضم</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Bot Header -->
+    <section class="bot-header">
+        <h1 class="section-title">🤖 Together Forever Bot | البوت</h1>
+        <p class="section-subtitle">Advanced multi-purpose Discord bot<br><span dir="rtl" style="display:block; margin-top:5px;">بوت ديسكورد شامل ومتطور لخدمتك</span></p>
+        
+        <div class="bot-status">
+            <div class="status-dot"></div>
+            <span>Online & Ready to Serve! | يعمل وجاهز للخدمة!</span>
+        </div>
+    </section>
+
+    <!-- Commands Detail -->
+    <section class="commands">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Complete Command List | قائمة الأوامر الكاملة</h2>
+                <p class="section-subtitle">Everything our bot can do for you<br><span dir="rtl" style="display:block; margin-top:5px;">كل ما يستطيع البوت تقديمه لسيرفرك</span></p>
+            </div>
+
+            <!-- Economy Section -->
+            <div class="command-category">
+                <div class="category-header">
+                    <i class="fas fa-coins"></i>
+                    <h3>Economy System | نظام الاقتصاد 💰</h3>
+                </div>
+                
+                <div class="command-list">
+                    <div class="command-item">
+                        <code>/balance [member]</code>
+                        <span>Check your or another member's balance | <span dir="rtl">معرفة رصيدك أو رصيد شخص آخر</span></span>
+                        <div class="usage-example">
+                            <strong>Example | مثال:</strong> <code>/balance</code> or <code>/balance @User</code>
+                        </div>
+                    </div>
+                    
+                    <div class="command-item">
+                        <code>/daily</code>
+                        <span>Claim your daily reward (100-500 coins) | <span dir="rtl">المطالبة بمكافأتك اليومية المجانية</span></span>
+                        <div class="usage-example">
+                            <strong>Cooldown | مدة الانتظار:</strong> 24 hours | 24 ساعة
+                        </div>
+                    </div>
+                    
+                    <div class="command-item">
+                        <code>/work</code>
+                        <span>Work to earn coins from various jobs | <span dir="rtl">للعمل وكسب عملات نقدية</span></span>
+                        <div class="usage-example">
+                            <strong>Jobs | الوظائف:</strong> Chef, Driver, Programmer, Artist, Musician, etc.<br>
+                            <strong>Cooldown | مدة الانتظار:</strong> 5 minutes | 5 دقائق
+                        </div>
+                    </div>
+                    
+                    <div class="command-item">
+                        <code>/give @member amount</code>
+                        <span>Give coins to another member | <span dir="rtl">تحويل الأموال لعضو آخر</span></span>
+                        <div class="usage-example">
+                            <strong>Example | مثال:</strong> <code>/give @Friend 500</code>
+                        </div>
+                    </div>
+                    
+                    <div class="command-item">
+                        <code>/leaderboard</code>
+                        <span>Show the top 10 richest users globally | <span dir="rtl">قائمة أغنى 10 أشخاص في السيرفر</span></span>
+                    </div>
+                    
+                    <div class="command-item">
+                        <code>/shop</code>
+                        <span>Open the interactive item shop | <span dir="rtl">فتح المتجر التفاعلي لشراء الرتب والمميزات</span></span>
+                        <div class="usage-example">
+                            <strong>Items | المشتريات:</strong> VIP Role, Custom Color, Special Badge, Double XP...
+                        </div>
+                    </div>
+                    
+                    <div class="command-item">
+                        <code>/inventory</code>
+                        <span>View your purchased items | <span dir="rtl">عرض سلة المشتريات وممتلكاتك</span></span>
+                    </div>
+                    
+                    <div class="command-item">
+                        <code>/slots amount</code>
+                        <span>Play the slot machine | <span dir="rtl">لعبة حظ (سلوت ماشين)</span> (min bet: 10)</span>
+                        <div class="usage-example">
+                            <strong>Multipliers | المضاعفات:</strong> Match 3 = 3x-50x | Match 2 = 2x
+                        </div>
+                    </div>
+                    
+                    <div class="command-item">
+                        <code>/blackjack amount</code>
+                        <span>Play blackjack against the dealer | <span dir="rtl">لعبة بلاك جاك</span> (min bet: 10)</span>
+                    </div>
+                    
+                    <div class="command-item">
+                        <code>/roulette amount choice</code>
+                        <span>Play roulette - choose red, black, or green | <span dir="rtl">لعبة روليت</span></span>
+                        <div class="usage-example">
+                            <strong>Payout | العوائد:</strong> 2x for correct color | الضعف عند تخمين اللون
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Moderation Section -->
+            <div class="command-category">
+                <div class="category-header">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Moderation Tools | أدوات الإشراف 🛡️</h3>
+                </div>
+                
+                <div class="command-list">
+                    <div class="command-item">
+                        <code>/kick @member [reason]</code>
+                        <span>Kick a member from the server | <span dir="rtl">طرد عضو من السيرفر</span></span>
+                        <div class="usage-example">
+                            <strong>Permission | الصلاحية:</strong> Kick Members
+                        </div>
+                    </div>
+                    
+                    <div class="command-item">
+                        <code>/ban @member [reason]</code>
+                        <span>Ban a member from the server | <span dir="rtl">حظر (باند) عضو من السيرفر</span></span>
+                        <div class="usage-example">
+                            <strong>Permission | الصلاحية:</strong> Ban Members
+                        </div>
+                    </div>
+                    
+                    <div class="command-item">
+                        <code>/unban user_id</code>
+                        <span>Unban a member via their User ID | <span dir="rtl">إلغاء حظر عضو باستخدام الآيدي الخاص به</span></span>
+                        <div class="usage-example">
+                            <strong>Example | مثال:</strong> <code>/unban 123456789</code>
+                        </div>
+                    </div>
+                    
+                    <div class="command-item">
+                        <code>/clear amount</code>
+                        <span>Clear up to 100 messages | <span dir="rtl">مسح حتى 100 رسالة</span></span>
+                        <div class="usage-example">
+                            <strong>Permission | الصلاحية:</strong> Manage Messages<br>
+                            <strong>Example | مثال:</strong> <code>/clear 50</code>
+                        </div>
+                    </div>
+                    
+                    <div class="command-item">
+                        <code>/nick @member nickname</code>
+                        <span>Change a member's nickname | <span dir="rtl">تغيير لقب العضو في السيرفر</span></span>
+                        <div class="usage-example">
+                            <strong>Permission | الصلاحية:</strong> Manage Nicknames
+                        </div>
+                    </div>
+                    
+                    <div class="command-item">
+                        <code>/mute @member minutes [reason]</code>
+                        <span>Timeout/mute a member | <span dir="rtl">إسكات وتقييد الكتابة لعضو</span></span>
+                        <div class="usage-example">
+                            <strong>Permission | الصلاحية:</strong> Moderate Members<br>
+                            <strong>Example | مثال:</strong> <code>/mute @User 10 Spamming</code>
+                        </div>
+                    </div>
+                    
+                    <div class="command-item">
+                        <code>/unmute @member</code>
+                        <span>Unmute a member | <span dir="rtl">إلغاء الإسكات عن عضو</span></span>
+                    </div>
+                    
+                    <div class="command-item">
+                        <code>/role @member role</code>
+                        <span>Add or remove a role from a member | <span dir="rtl">إعطاء أو سحب رتبة من عضو</span></span>
+                        <div class="usage-example">
+                            <strong>Permission | الصلاحية:</strong> Manage Roles
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- General Section -->
+            <div class="command-category">
+                <div class="category-header">
+                    <i class="fas fa-info-circle"></i>
+                    <h3>General Commands | أوامر عامة ℹ️</h3>
+                </div>
+                
+                <div class="command-list">
+                    <div class="command-item">
+                        <code>/ping</code>
+                        <span>Check bot latency and status | <span dir="rtl">فحص سرعة استجابة البوت وحالته</span></span>
+                        <div class="usage-example">
+                            <strong>Response | الرد:</strong> Shows ping in ms and online status | يظهر البنق وسرعة الاتصال
+                        </div>
+                    </div>
+                    
+                    <div class="command-item">
+                        <code>/botinfo</code>
+                        <span>Show advanced bot statistics | <span dir="rtl">عرض إحصائيات ومعلومات البوت المتقدمة</span></span>
+                        <div class="usage-example">
+                            <strong>Shows | يظهر:</strong> Bot name, servers, latency, developer, library
+                        </div>
+                    </div>
+                    
+                    <div class="command-item">
+                        <code>/userinfo [user]</code>
+                        <span>Show detailed information about a member | <span dir="rtl">عرض معلومات مفصلة عن العضو وحسابه</span></span>
+                        <div class="usage-example">
+                            <strong>Shows | يظهر:</strong> ID, username, account creation date, join date, roles
+                        </div>
+                    </div>
+                    
+                    <div class="command-item">
+                        <code>/avatar [user]</code>
+                        <span>Show user's avatar in high resolution | <span dir="rtl">عرض صورة حساب العضو بجودة عالية</span></span>
+                        <div class="usage-example">
+                            <strong>Includes | يتضمن:</strong> Download button for full size image | زر لتحميل الصورة
+                        </div>
+                    </div>
+                    
+                    <div class="command-item">
+                        <code>/roles</code>
+                        <span>Get a list of server roles and member counts | <span dir="rtl">عرض جميع رتب السيرفر وعدد أعضائها</span></span>
+                    </div>
+                    
+                    <div class="command-item">
+                        <code>/server</code>
+                        <span>Show server information dashboard | <span dir="rtl">عرض لوحة معلومات السيرفر بالكامل</span></span>
+                        <div class="usage-example">
+                            <strong>Shows | يظهر:</strong> Server name, creation date, member count, channels, roles
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Music Section -->
+            <div class="command-category">
+                <div class="category-header">
+                    <i class="fas fa-music"></i>
+                    <h3>Music Commands | أوامر الموسيقى 🎵</h3>
+                </div>
+                
+                <div class="command-list">
+                    <div class="command-item">
+                        <code>/play song</code>
+                        <span>Play a song from YouTube | <span dir="rtl">تشغيل أغنية من اليوتيوب</span></span>
+                        <div class="usage-example">
+                            <strong>Features | المميزات:</strong> High quality audio, queue support | جودة عالية ودعم الطابور
+                        </div>
+                    </div>
+                    
+                    <div class="command-item">
+                        <code>/pause</code>
+                        <span>Pause the current song | <span dir="rtl">إيقاف مؤقت للأغنية الحالية</span></span>
+                    </div>
+                    
+                    <div class="command-item">
+                        <code>/resume</code>
+                        <span>Resume the paused song | <span dir="rtl">استئناف تشغيل الأغنية</span></span>
+                    </div>
+                    
+                    <div class="command-item">
+                        <code>/skip</code>
+                        <span>Skip to the next song in queue | <span dir="rtl">تخطي للأغنية التالية في الطابور</span></span>
+                    </div>
+                    
+                    <div class="command-item">
+                        <code>/stop</code>
+                        <span>Stop playback and disconnect from voice channel | <span dir="rtl">إيقاف التشغيل ومغادرة الروم الصوتي</span></span>
+                    </div>
+                    
+                    <div class="command-item">
+                        <code>/queue</code>
+                        <span>Show the current music queue | <span dir="rtl">عرض طابور الأغاني القادمة</span></span>
+                    </div>
+                    
+                    <div class="command-item">
+                        <code>/nowplaying</code>
+                        <span>Show currently playing song with details | <span dir="rtl">عرض معلومات الأغنية التي تعمل حالياً</span></span>
+                    </div>
+                    
+                    <div class="command-item">
+                        <code>/volume 1-100</code>
+                        <span>Adjust playback volume | <span dir="rtl">تعديل مستوى الصوت</span> (default: 50%)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Together Forever</h3>
+                    <p>Your ultimate Discord community experience<br><span dir="rtl" style="display:block; margin-top:5px; color:var(--text-secondary);">تجربتك المطلقة والأفضل لمجتمع ديسكورد متكامل</span></p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links | روابط سريعة</h4>
+                    <ul>
+                        <li><a href="index.html#home">Home | الرئيسية</a></li>
+                        <li><a href="index.html#features">Features | المميزات</a></li>
+                        <li><a href="rules.html">Rules | القوانين</a></li>
+                        <li><a href="index.html#join">Join | انضم</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Together Forever • T4E. All rights reserved.</p>
+                <p>Made with ❤️ for our amazing community | تم الصنع بحب من أجل مجتمعنا الرائع</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Server Rules - Together Forever • T4E</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            padding-top: 80px;
+        }
+        
+        .rules-header {
+            text-align: center;
+            padding: 80px 20px;
+            background: linear-gradient(135deg, rgba(102, 126, 234, 0.2) 0%, rgba(118, 75, 162, 0.2) 100%);
+        }
+        
+        .rules-container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        .rule-card {
+            background: var(--card-bg);
+            border-radius: 20px;
+            padding: 30px;
+            margin-bottom: 25px;
+            border-left: 5px solid var(--primary-color);
+            transition: all 0.3s ease;
+            display: flex;
+            gap: 20px;
+            align-items: flex-start;
+        }
+        
+        .rule-card:hover {
+            transform: translateX(10px);
+            border-left-color: var(--accent-color);
+            box-shadow: 0 10px 40px rgba(88, 101, 242, 0.3);
+        }
+        
+        .rule-number {
+            font-size: 2rem;
+            font-weight: 800;
+            color: var(--accent-color);
+            min-width: 50px;
+        }
+        
+        .rule-content h3 {
+            color: var(--text-primary);
+            margin-bottom: 10px;
+            font-size: 1.4rem;
+        }
+        
+        .rule-content p {
+            color: var(--text-secondary);
+            line-height: 1.8;
+        }
+        
+        .rule-icon {
+            font-size: 2.5rem;
+            margin-right: 15px;
+        }
+        
+        .important-note {
+            background: rgba(255, 165, 0, 0.1);
+            border: 2px solid var(--warning-color);
+            border-radius: 15px;
+            padding: 25px;
+            margin: 40px 0;
+            text-align: center;
+        }
+        
+        .important-note i {
+            font-size: 3rem;
+            color: var(--warning-color);
+            margin-bottom: 15px;
+        }
+        
+        .welcome-box {
+            background: linear-gradient(135deg, rgba(0, 250, 154, 0.1), rgba(0, 229, 255, 0.1));
+            border: 2px solid var(--success-color);
+            border-radius: 20px;
+            padding: 40px;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .welcome-box h2 {
+            color: var(--success-color);
+            font-size: 2rem;
+            margin-bottom: 15px;
+        }
+        
+        .welcome-box p {
+            color: var(--text-primary);
+            font-size: 1.1rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <span class="logo-text">Together Forever</span>
+                <span class="logo-subtitle">T4E</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html#home">Home | الرئيسية</a></li>
+                <li><a href="index.html#features">Features | المميزات</a></li>
+                <li><a href="commands.html">Commands | الأوامر</a></li>
+                <li><a href="rules.html">Rules | القوانين</a></li>
+                <li><a href="index.html#join">Join | انضم</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Rules Header -->
+    <section class="rules-header">
+        <h1 class="section-title">📜 Server Rules & Guidelines | قوانين السيرفر</h1>
+        <p class="section-subtitle">Creating a safe and fun community for everyone<br>نصنع مجتمعاً آمناً وممتعاً للجميع</p>
+    </section>
+
+    <!-- Welcome Box -->
+    <div class="rules-container">
+        <div class="welcome-box">
+            <h2>Welcome to Together Forever! 🎉<br>أهلاً بك في Together Forever!</h2>
+            <p>By being part of our server, you agree to follow these rules to ensure everyone has a great experience!<br><span dir="rtl" style="display:block; margin-top:5px; color:var(--text-primary);">بانضمامك لسيرفرنا، أنت توافق على الالتزام بهذه القوانين لضمان تجربة ممتعة وآمنة للجميع!</span></p>
+        </div>
+
+        <!-- Rule Cards -->
+        <div class="rule-card">
+            <div class="rule-number">#1</div>
+            <div class="rule-content">
+                <h3><i class="fas fa-heart rule-icon"></i>Be Respectful | احترام الآخرين</h3>
+                <p>Treat all members with respect and kindness. No harassment, hate speech, discrimination, or bullying will be tolerated.<br><span dir="rtl" style="display:block; margin-top:5px; color:var(--text-primary);">عامل جميع الأعضاء باحترام ولطف. يمنع منعاً باتاً التحرش، خطاب الكراهية، التمييز، أو التنمر. نحن نرحب بالجميع.</span></p>
+            </div>
+        </div>
+
+        <div class="rule-card">
+            <div class="rule-number">#2</div>
+            <div class="rule-content">
+                <h3><i class="fas fa-comment-slash rule-icon"></i>No Spam or Self-Promotion | يمنع الإزعاج والإعلانات</h3>
+                <p>Avoid sending repeated messages, excessive emojis, caps lock abuse, or unauthorized advertising. Share your content only in designated channels.<br><span dir="rtl" style="display:block; margin-top:5px; color:var(--text-primary);">تجنب إرسال الرسائل المتكررة، أو استخدام الإيموجي بشكل مبالغ فيه. يمنع نشر الإعلانات بدون إذن من الإدارة.</span></p>
+            </div>
+        </div>
+
+        <div class="rule-card">
+            <div class="rule-number">#3</div>
+            <div class="rule-content">
+                <h3><i class="fas fa-user-shield rule-icon"></i>Follow Discord ToS | الالتزام بقوانين الديسكورد</h3>
+                <p>All Discord Terms of Service and Community Guidelines must be followed. This includes age restrictions and platform rules.<br><span dir="rtl" style="display:block; margin-top:5px; color:var(--text-primary);">يجب الالتزام بجميع شروط وقوانين مجتمع ديسكورد الرسمية. ويشمل ذلك القيود العمرية وسياسات الاستخدام.</span></p>
+            </div>
+        </div>
+
+        <div class="rule-card">
+            <div class="rule-number">#4</div>
+            <div class="rule-content">
+                <h3><i class="fas fa-volume-mute rule-icon"></i>Voice Channel Etiquette | آداب الغرف الصوتية</h3>
+                <p>Keep voice chat volume reasonable. No loud sounds or disruptive music. Respect others' listening experience.<br><span dir="rtl" style="display:block; margin-top:5px; color:var(--text-primary);">حافظ على مستوى صوت معقول في الغرف الصوتية. يمنع تشغيل الأصوات المزعجة أو الصراخ. احترم تجربة الآخرين.</span></p>
+            </div>
+        </div>
+
+        <div class="rule-card">
+            <div class="rule-number">#5</div>
+            <div class="rule-content">
+                <h3><i class="fas fa-image rule-icon"></i>Appropriate Content Only | المحتوى اللائق فقط</h3>
+                <p>No NSFW, gore, violent, or sexually explicit content anywhere in the server. Keep profile pictures appropriate.<br><span dir="rtl" style="display:block; margin-top:5px; color:var(--text-primary);">يمنع نشر المحتوى الإباحي، العنيف، أو الدموي نهائياً في السيرفر. يجب أن تكون صور الحسابات الشخصية لائقة.</span></p>
+            </div>
+        </div>
+
+        <div class="rule-card">
+            <div class="rule-number">#6</div>
+            <div class="rule-content">
+                <h3><i class="fas fa-user-lock rule-icon"></i>Privacy Matters | خصوصيتك تهمنا</h3>
+                <p>Do not share personal information (yours or others'). This includes phone numbers, addresses, or private data.<br><span dir="rtl" style="display:block; margin-top:5px; color:var(--text-primary);">لا تشارك أي معلومات شخصية (لك أو لغيرك). وهذا يشمل أرقام الهواتف، العناوين، والبيانات الخاصة.</span></p>
+            </div>
+        </div>
+
+        <div class="rule-card">
+            <div class="rule-number">#7</div>
+            <div class="rule-content">
+                <h3><i class="fas fa-gavel rule-icon"></i>Listen to Staff | الاستماع للإدارة</h3>
+                <p>Follow instructions from moderators and admins. If you disagree, discuss it privately with staff.<br><span dir="rtl" style="display:block; margin-top:5px; color:var(--text-primary);">اتبع تعليمات الإدارة والمشرفين. إذا كانت لديك أي مشكلة أو اعتراض، تواصل معنا في الخاص أو عبر التيكت.</span></p>
+            </div>
+        </div>
+
+        <div class="rule-card">
+            <div class="rule-number">#8</div>
+            <div class="rule-content">
+                <h3><i class="fas fa-bug rule-icon"></i>Report Issues | الإبلاغ عن المشاكل</h3>
+                <p>If you see rule-breaking or feel uncomfortable, report it to staff via ticket system. Don't handle it yourself.<br><span dir="rtl" style="display:block; margin-top:5px; color:var(--text-primary);">إذا رأيت مخالفة أو واجهت مشكلة، قم بالإبلاغ عنها فوراً عبر نظام التيكت، ولا تحاول حل المشكلة بنفسك.</span></p>
+            </div>
+        </div>
+
+        <div class="rule-card">
+            <div class="rule-number">#9</div>
+            <div class="rule-content">
+                <h3><i class="fas fa-brain rule-icon"></i>Use Common Sense | استخدم عقلك المنطقي</h3>
+                <p>Even if something isn't explicitly listed here, use good judgment. When in doubt, ask a staff member.<br><span dir="rtl" style="display:block; margin-top:5px; color:var(--text-primary);">حتى وإن لم يكن الشيء مذكوراً هنا نصاً، استخدم المنطق. إذا كنت في شك من أمر ما، اسأل أحد المشرفين.</span></p>
+            </div>
+        </div>
+
+        <div class="rule-card">
+            <div class="rule-number">#10</div>
+            <div class="rule-content">
+                <h3><i class="fas fa-gamepad rule-icon"></i>Have Fun! | استمتع بوقتك!</h3>
+                <p>Enjoy your time here! Participate in events, make friends, play games, and be part of our community.<br><span dir="rtl" style="display:block; margin-top:5px; color:var(--text-primary);">استمتع بوقتك! شارك في الفعاليات، كون صداقات، العب الألعاب، وكن جزءاً من مجتمعنا الرائع!</span></p>
+            </div>
+        </div>
+
+        <!-- Important Note -->
+        <div class="important-note">
+            <i class="fas fa-exclamation-triangle"></i>
+            <h3 style="color: var(--warning-color); margin: 15px 0;">Important Notice | ملاحظة مهمة جداً</h3>
+            <p style="color: var(--text-secondary);">
+                <strong>Consequences | العواقب:</strong> Rule violations may result in warnings, mutes, kicks, or bans depending on severity.<br>
+                <span dir="rtl" style="display:block; margin-top:3px; margin-bottom:10px; color:var(--text-primary);">مخالفة القوانين قد تؤدي إلى التحذير، الإسكات، الطرد، أو الحظر النهائي حسب نوع المخالفة.</span>
+                
+                <strong>Staff Discretion | صلاحيات الإدارة:</strong> Moderators reserve the right to take action even for unlisted offenses.<br>
+                <span dir="rtl" style="display:block; margin-top:3px; margin-bottom:10px; color:var(--text-primary);">تمتلك الإدارة كامل الصلاحية لاتخاذ الإجراءات المناسبة حتى لو لم تكن المخالفة مذكورة ضمن هذه القائمة.</span>
+                
+                <strong>Updates | التحديثات:</strong> Rules may change at any time. It's your responsibility to stay informed.<br>
+                <span dir="rtl" style="display:block; margin-top:3px; color:var(--text-primary);">القوانين قد تتغير في أي وقت، ومتابعة التحديثات هي مسؤوليتك.</span>
+            </p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Together Forever</h3>
+                    <p>Your ultimate Discord community experience<br><span dir="rtl" style="display:block; margin-top:5px; color:var(--text-secondary);">تجربتك المطلقة والأفضل لمجتمع ديسكورد متكامل</span></p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links | روابط سريعة</h4>
+                    <ul>
+                        <li><a href="index.html#home">Home | الرئيسية</a></li>
+                        <li><a href="index.html#features">Features | المميزات</a></li>
+                        <li><a href="commands.html">Commands | الأوامر</a></li>
+                        <li><a href="index.html#join">Join | انضم</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Together Forever • T4E. All rights reserved.</p>
+                <p>Made with ❤️ for our amazing community | تم الصنع بحب من أجل مجتمعنا الرائع</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

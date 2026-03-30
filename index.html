@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Together Forever • T4E - Discord Server</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <span class="logo-text">Together Forever</span>
+                <span class="logo-subtitle">T4E</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home | الرئيسية</a></li>
+                <li><a href="#features">Features | المميزات</a></li>
+                <li><a href="commands.html">Commands | الأوامر</a></li>
+                <li><a href="rules.html">Rules | القوانين</a></li>
+                <li><a href="#gallery">Gallery | المعرض</a></li>
+                <li><a href="#join">Join | انضم</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-badge">🎮 Welcome to Together Forever | أهلاً بك</div>
+            <h1 class="hero-title">
+                <span class="gradient-text">Together Forever</span>
+                <br>
+                <span class="server-tag">• T4E</span>
+            </h1>
+            <p class="hero-description" style="line-height:1.8;">
+                Join our amazing Discord community! Experience advanced moderation, economy systems, music, leveling, tickets, and much more.<br>
+                <span dir="rtl" style="display:block; margin-top:5px; color:var(--text-primary);">انضم إلى مجتمعنا الرائع في ديسكورد! استمتع بأفضل أنظمة الحماية، الاقتصاد، الموسيقى، التذاكر، والمزيد مع بوتنا المخصص.</span>
+            </p>
+            <div class="hero-buttons">
+                <a href="#join-discord" onclick="showDiscordInvite(event)" class="btn btn-primary">
+                    <i class="fab fa-discord"></i> Join Server | انضم
+                </a>
+                <a href="#features" class="btn btn-secondary">
+                    <i class="fas fa-rocket"></i> Features | المميزات
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <i class="fas fa-users"></i>
+                    <span class="stat-number">Active Members<br>تفاعل سريع</span>
+                </div>
+                <div class="stat">
+                    <i class="fas fa-gamepad"></i>
+                    <span class="stat-number">Fun Activities<br>فعاليات ممتعة</span>
+                </div>
+                <div class="stat">
+                    <i class="fas fa-shield-alt"></i>
+                    <span class="stat-number">24/7 Moderation<br>حماية مستمرة</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="Together Forever_large.gif" alt="Together Forever Server" class="floating-image">
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Server Features | مميزات السيرفر</h2>
+                <p class="section-subtitle">Discover what makes our server special<br><span dir="rtl" style="display:block; margin-top:5px;">اكتشف ما يجعل سيرفرنا مميزاً وفريداً من نوعه</span></p>
+            </div>
+            
+            <div class="features-grid">
+                <!-- Economy System -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-coins"></i>
+                    </div>
+                    <h3>Economy System | نظام اقتصادي</h3>
+                    <p style="margin-bottom:10px;">Work, trade, play games, and manage your virtual currency.<br><span dir="rtl" style="display:block; margin-top:5px; color:#b9bbbe;">اعمل، تاجر، العب الألعاب، وقم بإدارة عملتك الافتراضية بكل متعة.</span></p>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check"></i> Daily rewards & jobs | مكافآت يومية ووظائف</li>
+                        <li><i class="fas fa-check"></i> Interactive Shop | متجر تفاعلي متكامل</li>
+                        <li><i class="fas fa-check"></i> Casino Games | ألعاب كازينو وتسلية</li>
+                        <li><i class="fas fa-check"></i> Global Leaderboard | قائمة أفضل اللاعبين</li>
+                    </ul>
+                </div>
+
+                <!-- Moderation -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Advanced Moderation | حماية متقدمة</h3>
+                    <p style="margin-bottom:10px;">Keep your server safe with powerful moderation tools.<br><span dir="rtl" style="display:block; margin-top:5px; color:#b9bbbe;">حافظ على أمان السيرفر مع أدوات إشراف وحماية قوية وذكية.</span></p>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check"></i> Ban, kick, mute | حظر، طرد، وإسكات</li>
+                        <li><i class="fas fa-check"></i> Message cleanup | تنظيف وتصفية الرسائل</li>
+                        <li><i class="fas fa-check"></i> Nickname system | إدارة الألقاب والأسماء</li>
+                        <li><i class="fas fa-check"></i> Role assignment | نظام إعطاء الرتب</li>
+                    </ul>
+                </div>
+
+                <!-- Music -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-music"></i>
+                    </div>
+                    <h3>Music Playback | نظام موسيقى</h3>
+                    <p style="margin-bottom:10px;">Enjoy high-quality music streaming with playlist support.<br><span dir="rtl" style="display:block; margin-top:5px; color:#b9bbbe;">استمتع بجودة صوت عالية مع دعم كامل لقوائم التشغيل.</span></p>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check"></i> YouTube integration | دعم يوتيوب كامل</li>
+                        <li><i class="fas fa-check"></i> Queue management | إدارة قائمة الانتظار</li>
+                        <li><i class="fas fa-check"></i> Play/Skip controls | تحكم ذكي بالتشغيل</li>
+                        <li><i class="fas fa-check"></i> Volume adjustment | تعديل مستوى الصوت</li>
+                    </ul>
+                </div>
+
+                <!-- Leveling -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Leveling System | نظام تفاعل</h3>
+                    <p style="margin-bottom:10px;">Earn XP by chatting. Level up to unlock special perks!<br><span dir="rtl" style="display:block; margin-top:5px; color:#b9bbbe;">احصل على نقاط تفاعل عند الدردشة لفتح مزايا خاصة بك!</span></p>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check"></i> XP tracking | تتبع مستمر لنقاط الخبرة</li>
+                        <li><i class="fas fa-check"></i> Level progression | تقدم وتطور في اللفل</li>
+                        <li><i class="fas fa-check"></i> Rank cards | بطاقات رتب مخصصة لكل عضو</li>
+                        <li><i class="fas fa-check"></i> Leaderboards | لوحة شرف للمتفاعلين</li>
+                    </ul>
+                </div>
+
+                <!-- Tickets -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-ticket-alt"></i>
+                    </div>
+                    <h3>Ticket System | نظام تذاكر</h3>
+                    <p style="margin-bottom:10px;">Get personalized support with our easy ticket system.<br><span dir="rtl" style="display:block; margin-top:5px; color:#b9bbbe;">احصل على دعم فني مخصص واحترافي عبر نظام التذاكر السهل.</span></p>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check"></i> Private tickets | غرف تذاكر خاصة وآمنة</li>
+                        <li><i class="fas fa-check"></i> Staff support | دعم سريع من الإدارة</li>
+                        <li><i class="fas fa-check"></i> Transcripts | استخراج نسخة من المحادثة</li>
+                        <li><i class="fas fa-check"></i> Easy management | إدارة سهلة ومنظمة</li>
+                    </ul>
+                </div>
+
+                <!-- Security -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <h3>Security Features | نظام الأمان</h3>
+                    <p style="margin-bottom:10px;">Advanced protection against raids and malicious users.<br><span dir="rtl" style="display:block; margin-top:5px; color:#b9bbbe;">حماية وإعدادات متقدمة ضد هجمات السبام والمستخدمين الوهميين.</span></p>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check"></i> Anti-raid system | حماية تلقائية ضد الريد</li>
+                        <li><i class="fas fa-check"></i> Spam detection | اكتشاف التكرار المزعج</li>
+                        <li><i class="fas fa-check"></i> Verification system | نظام توثيق للأعضاء</li>
+                        <li><i class="fas fa-check"></i> Auto-moderation | مراقبة آلية مستمرة</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bot Commands Section -->
+    <section id="bot-commands" class="commands">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Bot Commands | أوامر البوت</h2>
+                <p class="section-subtitle">Explore our powerful multi-purpose bot<br><span dir="rtl" style="display:block; margin-top:5px;">استكشف البوت الشامل بميزاته القوية والمتطورة</span></p>
+            </div>
+
+            <div class="commands-summary" style="text-align: center; max-width: 800px; margin: 0 auto; padding: 40px; background: var(--card-bg); border-radius: 20px; border: 2px solid var(--primary-color);">
+                <i class="fas fa-robot" style="font-size: 4rem; color: var(--accent-color); margin-bottom: 20px;"></i>
+                <h3 style="font-size: 1.8rem; margin-bottom: 20px; color: var(--text-primary);">Discover Over 30+ Commands!</h3>
+                <p style="color: var(--text-secondary); margin-bottom: 15px; font-size: 1.1rem;">
+                    From advanced moderation and economy systems to music playback and server utilities, our bot has everything you need.
+                </p>
+                <p dir="rtl" style="color: var(--text-secondary); margin-bottom: 30px; font-size: 1.1rem;">
+                    بدءاً من الإشراف المتقدم والاقتصاد، وصولاً إلى تشغيل الموسيقى وأدوات السيرفر؛ بوتنا يحتوي على كل ما تحتاجه!
+                </p>
+                <div style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
+                    <a href="commands.html" class="btn btn-primary btn-large">
+                        <i class="fas fa-list"></i> View All Commands | عرض جميع الأوامر
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Server Gallery | معرض السيرفر</h2>
+                <p class="section-subtitle">A glimpse into our community<br><span dir="rtl" style="display:block; margin-top:5px;">نظرة سريعة على مجتمعنا الرائع</span></p>
+            </div>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="Together Forever.gif" alt="Together Forever Community">
+                    <div class="gallery-overlay">
+                        <h3>Our Community | مجتمعنا</h3>
+                        <p>Amazing members coming together<br><span dir="rtl" style="display:block; margin-top:5px;">أعضاء رائعون يجتمعون معاً</span></p>
+                    </div>
+                </div>
+                <div class="gallery-item large">
+                    <img src="Together Forever_large.gif" alt="Server Events">
+                    <div class="gallery-overlay">
+                        <h3>Server Events | فعاليات السيرفر</h3>
+                        <p>Fun activities and events<br><span dir="rtl" style="display:block; margin-top:5px;">فعاليات وأنشطة ممتعة للجميع</span></p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="Welcome neon.gif" alt="Welcome System">
+                    <div class="gallery-overlay">
+                        <h3>Welcome System | نظام الترحيب</h3>
+                        <p>Greeting new members<br><span dir="rtl" style="display:block; margin-top:5px;">ترحيب مميز بالأعضاء الجدد</span></p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="welcom server.gif" alt="Server Features">
+                    <div class="gallery-overlay">
+                        <h3>Server Features | مميزات السيرفر</h3>
+                        <p>Advanced bot capabilities<br><span dir="rtl" style="display:block; margin-top:5px;">قدرات متطورة للبوت</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Join Section -->
+    <section id="join" class="join">
+        <div class="container">
+            <div class="join-content">
+                <h2 class="join-title">Ready to Join Us? | هل أنت مستعد للانضمام؟</h2>
+                <p class="join-description">
+                    Become part of the Together Forever family! Meet new friends, participate in events, and enjoy all our amazing features.<br>
+                    <span dir="rtl" style="display:block; margin-top:10px; color:var(--text-secondary);">كُن جزءاً من عائلة Together Forever! تعرّف على أصدقاء جدد، شارك في الفعاليات، واستمتع بجميع ميزاتنا الرائعة.</span>
+                </p>
+                <div class="join-perks">
+                    <div class="perk">
+                        <i class="fas fa-users"></i>
+                        <span>Active Community | مجتمع نشط</span>
+                    </div>
+                    <div class="perk">
+                        <i class="fas fa-gamepad"></i>
+                        <span>Regular Events | فعاليات مستمرة</span>
+                    </div>
+                    <div class="perk">
+                        <i class="fas fa-gift"></i>
+                        <span>Giveaways | جوائز قيمة</span>
+                    </div>
+                    <div class="perk">
+                        <i class="fas fa-headset"></i>
+                        <span>24/7 Support | دعم مستمر</span>
+                    </div>
+                </div>
+                <a href="#join-discord" onclick="showDiscordInvite(event)" class="btn btn-primary btn-large">
+                    <i class="fab fa-discord"></i> Join Server Now | انضم للسيرفر الآن
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Join Discord Modal -->
+    <div id="join-discord" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal()">&times;</span>
+            <div class="modal-header">
+                <i class="fab fa-discord"></i>
+                <h2>Join Together Forever • T4E</h2>
+            </div>
+            <div class="modal-body">
+                <p>Click the button below to join our amazing Discord community!<br><span dir="rtl" style="display:block; margin-top:5px; color:var(--text-secondary);">اضغط على الزر بالأسفل للانضمام إلى مجتمعنا الرائع في ديسكورد!</span></p>
+                <div class="discord-server-preview">
+                    <div class="server-icon">
+                        <i class="fab fa-discord"></i>
+                    </div>
+                    <h3>Together Forever • T4E</h3>
+                    <p class="online-count"><i class="fas fa-circle"></i> <span id="online-members">Loading...</span> Online</p>
+                </div>
+                <a href="https://discord.gg/MNxSM9sZ" target="_blank" class="btn btn-primary btn-large join-btn">
+                    <i class="fab fa-discord"></i> Join Discord Server | انضم للديسكورد
+                </a>
+                <p class="modal-note" style="margin-top:15px; font-size: 0.85rem; color:var(--text-secondary);">Link active and ready! | الرابط نشط وجاهز!</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Together Forever</h3>
+                    <p>Your ultimate Discord community experience<br><span dir="rtl" style="display:block; margin-top:5px; color:var(--text-secondary);">تجربتك المطلقة والأفضل لمجتمع ديسكورد متكامل</span></p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-discord"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links | روابط سريعة</h4>
+                    <ul>
+                        <li><a href="#home">Home | الرئيسية</a></li>
+                        <li><a href="#features">Features | المميزات</a></li>
+                        <li><a href="commands.html">Commands | الأوامر</a></li>
+                        <li><a href="rules.html">Rules | القوانين</a></li>
+                        <li><a href="#join">Join | انضم إلينا</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Bot Features | ميزات البوت</h4>
+                    <ul>
+                        <li><a href="#features">Economy System | الاقتصاد</a></li>
+                        <li><a href="#features">Moderation | الإشراف</a></li>
+                        <li><a href="#features">Music Playback | الموسيقى</a></li>
+                        <li><a href="#features">Leveling | نظام التفاعل</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact | تواصل معنا</h4>
+                    <p>Server Owner: <strong>T4E Team</strong></p>
+                    <p>Discord Server: <strong>Together Forever</strong></p>
+                    <p style="margin-top: 15px; color: var(--success-color); font-size: 0.9rem;">
+                        <i class="fas fa-check-circle"></i> Service is 100% online
+                    </p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Together Forever • T4E. All rights reserved.</p>
+                <p>Made with ❤️ for our amazing community | تم الصنع بحب من أجل مجتمعنا الرائع</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
